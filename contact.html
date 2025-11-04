@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Michael Otieno Odhiambo</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* ===== General Page Styling ===== */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 123, 255, 0.6)), 
+                  url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: #fff;
+      background-attachment: fixed;
+    }
+
+    header.hero.small {
+      text-align: center;
+      padding: 60px 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .navbar a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #00b4ff;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.6);
+      margin: 50px auto;
+      max-width: 700px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .contact ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .contact li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    form {
+      margin-top: 20px;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      outline: none;
+      width: 100%;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      background: #00b4ff;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #008ccc;
+    }
+
+    /* ===== Social Media Icons ===== */
+    .social-links {
+      margin-top: 35px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 10px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      background: #00b4ff;
+      color: white;
+      text-align: center;
+      font-size: 22px;
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 15px #00b4ff;
+      background: #008ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .contact {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero small">
+    <h1>Contact Me</h1>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <p>If you’d like to reach out for collaboration or inquiries, feel free to contact me:</p>
+
+    <ul>
+      <li>📍 P.O. Box 143–40100, Kisumu, Kenya</li>
+      <li>📞 +254 113505703</li>
+      <li>✉️ michaelodhiambo692@gmail.com</li>
+    </ul>
+
+    <!-- modify this form HTML and place wherever you want your form -->
+<form action="https://formspree.io/f/manlgalb" method="POST" onsubmit="alert('✅ Message sent successfully! Thank you for reaching out.');">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="mailto:michaelodhiambo692@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/in/michael-otieno-odhiambo" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Michael Otieno Odhiambo | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
